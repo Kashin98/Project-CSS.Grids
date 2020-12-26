@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sanchez', serif;
+}
+/* Header */
+
+.header{
+    background-color: #000000;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+/* Navbar */
+.nav-wrapper{
+    background-color: rgba(0, 255, 255, 0.363);
+    padding: 20px 0;
+}
+
+.navlinks{
+    display: grid;
+}
+.links{
+    text-decoration: none;
+    padding: 10px 0 10px 20px;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    display: inline-block;
+
+}
+.links:link{
+    color: #000000;
+}
+.links:visited{
+    color: #000000;
+}
+.links:hover{
+    padding-left: 30px;
+    background: aqua;
+}
+
+
+
+@media (min-width:768px){
+    .navlinks{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .links:hover{
+        color: #ffbb00;
+        padding-left: 0;
+    }
+    .links{
+        text-align: center;
+        padding: 30px 0px 30px 0px;
+    }
+    .nav-wrapper{
+        padding: 0;
+    }
+}
+
+/* Intro */
+.title-intro{
+    background: azure;
+    display: grid;
+    height: 100vh;
+}
+.intro{
+    align-self: center;
+    justify-self: center;
+    gap: 20px;
+}
+.title-wrapper,.descrip-style{
+    width: 70vw;
+    padding: 20px;
+}
+.title-wrapper{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+/* Footer */
+
+.footer{
+    background: rgba(0, 255, 255, 0.363);
+}
+.footer_wrapper{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer_link{
+    display: inline-block;
+    justify-self: center;
+    align-self: center;
+    color: #000000;
+    font-size: 1.7rem;
+    transition: all 0.5s;
+}
+.footer_link:hover{
+    color: #ffbb00;
+}
+
+/* Contact section */
+.contact-me{
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.contact_link{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 20px;
+    justify-self: center;
+}
+
+/* Layout setup - had to it put down here so it takes precedent and can apply to footer and nav links */
+
+@media (min-width:1200px){
+    .layout_setup{
+        display: grid;
+        grid-template-columns: 1fr 7fr 1fr;
+    }
+    .navlinks{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        height: 100%;
+    }
+    .links{
+        align-self: center;
+        padding: 83px 0;
+    }
+    .footer{
+        align-items: center;
+    }
+    .footer_wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+    .footer_link{
+        display: inline-block;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 10px;
+    }
+}
