@@ -11,6 +11,8 @@ This is the bucket's direct Endpoint "http://project-cssgrid.s3-website.ap-south
 
 WEBSITE FULLY ACCESSIBLE THROUGH CDN: "https://dl1j7u2b627r9.cloudfront.net"
 
+Hosted on Netlify - "https://project-css-grids.netlify.app"
+
 Website optimized for all screen sizes.
 
 (All used AWS services expire around end of 2021 for this project)
